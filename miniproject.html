@@ -85,7 +85,7 @@
     </div>
     <script>
         const chatGPT = async (messages, parameters = {}) => {
-            const apikey = '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';
+            const apikey = <YOUR_API_KEY>;
             if (messages[0].constructor === String) return await chatGPT([['user', messages[0]]]);
             messages = messages.map(line => ({ role: line[0], content: line[1].trim() }))
             console.log(1)
